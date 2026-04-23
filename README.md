@@ -1,16 +1,123 @@
-# React + Vite
+# Candidate Review Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A production-style internal recruiter dashboard built using **React + Tailwind CSS** to help hiring teams efficiently evaluate and prioritize candidates.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Candidate Management
 
-## React Compiler
+* View 50+ candidate profiles in a structured dashboard
+* Search candidates by name
+* Filter by assignment score
+* Filter by review status
+* Sort by assignment score or priority
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Candidate Review Panel
 
-## Expanding the ESLint configuration
+* Open candidate details in a side drawer
+* Edit scores in real time:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  * Assignment
+  * Video
+  * ATS
+  * GitHub
+  * Communication
+
+### Dynamic Priority Engine
+
+Automatically calculates candidate priority using weighted logic:
+
+* Assignment → 30%
+* Video → 25%
+* ATS → 20%
+* GitHub → 15%
+* Communication → 10%
+
+Priority Levels:
+
+* P0 → Interview Immediately
+* P1 → Strong Shortlist
+* P2 → Review Later
+* P3 → Reject
+
+### Reviewer Workflow
+
+* Update candidate review status:
+
+  * Pending
+  * Reviewed
+  * Shortlisted
+  * Rejected
+
+### Evaluation Panels
+
+#### Assignment Evaluation
+
+* UI Quality
+* Component Structure
+* State Handling
+* Edge Cases
+* Responsiveness
+* Accessibility
+
+#### Video Evaluation
+
+* Clarity
+* Confidence
+* Architecture Explanation
+* Tradeoff Reasoning
+* Communication Strength
+
+### Candidate Comparison
+
+Compare up to 3 candidates side-by-side.
+
+### UX Features
+
+* Scrollable table
+* Empty state handling
+* Priority color indicators
+* Recruiter notes section
+* Responsive layout
+
+---
+
+## 🛠 Tech Stack
+
+* React
+* JavaScript
+* Tailwind CSS
+* Vite
+
+---
+
+## 📦 Installation
+
+```bash
+npm install
+npm run dev
+```
+
+---
+
+## 📁 Project Structure
+
+```bash
+src/
+ components/
+ data/
+ utils/
+ App.jsx
+```
+
+---
+
+## 🎯 Purpose
+
+This project simulates a real-world internal hiring tool used by recruiters to make faster and smarter candidate decisions.
+
+---
+
+## 👩‍💻 Author
+
+Bhavitha Pala
